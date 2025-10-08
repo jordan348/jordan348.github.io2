@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>My Financial Literacy Page</title>
+<style>
+  :root{
+    --bg:#0e1224;--fg:#ecf2ff;--muted:#a9b7ff;--card:#141a33;--accent:#7dd3fc;
+  }
+  @media (prefers-color-scheme: light){
+    :root{--bg:#f7f8ff;--fg:#0b1220;--muted:#475569;--card:#ffffff;--accent:#2563eb;}
+  }
+  *{box-sizing:border-box} body{margin:0;font:16px/1.6 system-ui,Segoe UI,Roboto,Arial;
+    color:var(--fg);background:
+    radial-gradient(700px 300px at 90% -10%, #60a5fa33, transparent 60%),
+    radial-gradient(500px 250px at -10% 0%, #22d3ee22, transparent 60%),
+    var(--bg);}
+  .wrap{max-width:900px;margin:auto;padding:20px}
+  header{padding:40px 20px;border-radius:18px;color:#fff;background:
+    linear-gradient(135deg,#0ea5e9,#8b5cf6 60%,#f472b6);position:relative;overflow:hidden}
+  header h1{margin:0 0 6px;font-size:clamp(24px,6vw,44px);letter-spacing:-.02em}
+  header p{margin:0;opacity:.95}
+  .tag{display:inline-block;margin:0 0 12px;padding:6px 12px;border:1px solid #ffffff44;border-radius:999px;background:#00000026;font-weight:600}
+  section{margin:28px 0}
+  h2{margin:0 0 10px;font-size:22px}
+  .grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+  .card{background:var(--card);border:1px solid #243055;border-radius:14px;padding:14px;transition:transform .15s}
+  .card:hover{transform:translateY(-3px)}
+  ul{padding-left:18px;margin:8px 0}
+  .muted{color:var(--muted)}
+  .btn{display:inline-block;margin-top:10px;padding:10px 14px;border-radius:999px;
+    text-decoration:none;color:#000;background:var(--accent);font-weight:700}
+  footer{margin:30px 0 10px;text-align:center;font-size:14px;color:var(--muted)}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <span class="tag">💸 Financial Literacy • Empowerment</span>
+      <h1>Money Confidence, Real-Life Freedom</h1>
+      <p>I’m passionate about making money simple—so more people can make smart choices and build options.</p>
+    </header>
+
+    <section>
+      <h2>Why It Matters</h2>
+      <div class="grid">
+        <div class="card"><strong>Origin:</strong> I saw how budgets, credit, and compounding change lives. Now I teach it.</div>
+        <div class="card"><strong>Mission:</strong> Cut the jargon, keep it practical, start today.</div>
+        <div class="card"><strong>Impact:</strong> Workshops, 1-on-1s, and simple tools that turn “I should” into “I did”.</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>My Pillars</h2>
+      <div class="grid">
+        <div class="card"><h3>🏦 Budget</h3><ul><li>Track weekly</li><li>Give every dollar a job</li><li>Automate bills+savings</li></ul></div>
+        <div class="card"><h3>🛟 Safety</h3><ul><li>$1,000 starter fund</li><li>3–6 mo. buffer</li><li>Right insurance</li></ul></div>
+        <div class="card"><h3>📚 Credit</h3><ul><li>On time, in full</li><li>&lt;30% use (aim 10%)</li><li>Check reports yearly</li></ul></div>
+        <div class="card"><h3>💹 Investing</h3><ul><li>Start early</li><li>Index funds core</li><li>Let it compound</li></ul></div>
+        <div class="card"><h3>🧠 Mindset</h3><ul><li>Simple &gt; complex</li><li>Systems over willpower</li><li>Progress, not perfect</li></ul></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Starter Kit</h2>
+      <div class="grid">
+        <div class="card"><strong>50/30/20:</strong> Needs / Wants / Save-Invest.</div>
+        <div class="card"><strong>🚨 $1,000:</strong> Avoid high-interest emergencies.</div>
+        <div class="card"><strong>10–20%:</strong> Aim for ongoing saving rate.</div>
+        <div class="card"><strong>📅 Autopilot:</strong> Pay yourself first every payday.</div>
+      </div>
+      <a class="btn" href="#contact">Get in touch</a>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="muted">Email: <strong>you@example.com</strong> • IG/LinkedIn: <strong>@yourhandle</strong></p>
+    </section>
+
+    <footer>© <script>document.write(new Date().getFullYear())</script> • Built with clarity & compounding.</footer>
+  </div>
+</body>
+</html>
